@@ -5,7 +5,7 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props)=>{
     const [cartItem,setCartItem]=useState({});
-    const url = "http://localhost:8080";
+    const url = "https://food-delivery-backend-kn5g.onrender.com";
     const [token,setToken]=useState("")
     const [food_list, setFood_list]=useState([])
     const addToCart= async (itemId)=>{
